@@ -14,7 +14,11 @@ export class FormularioPage implements OnInit {
   constructor(private formBuilder : FormBuilder) { }
 
   enviar(){
-    console.log(this.cliente)
+    if (this.clienteForm.invalid || this.clienteForm.pending){
+      return
+    }else{
+      console.log(this.cliente)
+    }
   }
 
   ngOnInit() {
