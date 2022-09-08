@@ -11,7 +11,7 @@ export class FormularioPage implements OnInit {
   cliente = {}
   clienteForm : FormGroup
 
-  constructor(private formBuilder : FormBuilder) { }
+  constructor(private formBuilder : FormBuilder) { } 
 
   enviar(){
     if (this.clienteForm.invalid || this.clienteForm.pending){

@@ -11,7 +11,7 @@
       <ion-input [(ngModel)]="cliente.nome" formControlName="nome"></ion-input>
       <small class="error-message" *ngIf="(clienteForm.get('nome').errors?.required || clienteForm.get('nome').errors?.minlength || clienteForm.get('nome').errors?.maxlength) && form.submitted">Nome invalido, Informe um nome de 3 a 50 caracteres</small>
     </ion-item>
-
+ 
     <ion-item>
       <ion-label position="floating">CPF:</ion-label>
       <ion-input [(ngModel)]="cliente.cpf" formControlName="cpf"></ion-input>
